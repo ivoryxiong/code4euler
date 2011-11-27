@@ -6,7 +6,7 @@ import java.util.Set;
 
 import org.ivory.code4euler.util.PrimeUtils;
 
-public class P058_RATIO extends EasyEuler {
+public class P058_RATIO extends EasyEuler<Integer> {
 	private Set<Integer> primes;
 
 	private int n;
@@ -55,5 +55,18 @@ public class P058_RATIO extends EasyEuler {
 		System.out.println(p58.run(1, 10));
 		long time = System.currentTimeMillis() - beg;
 		System.out.println(time + " ms");
+	}
+
+	@Override
+	void input() {
+	}
+
+	@Override
+	void output() {
+	}
+
+	@Override
+	Integer run() {
+		return null;
 	}
 }

@@ -2,7 +2,7 @@ package org.ivory.code4euler;
 
 import java.math.BigInteger;
 
-public class P057_FRACT extends EasyEuler {
+public class P057_FRACT extends EasyEuler<Integer> {
 	int cnt = 0;
 
 	public int run(int k) {
@@ -25,5 +25,18 @@ public class P057_FRACT extends EasyEuler {
 		System.out.println(p57.run(1000));
 		long time = System.currentTimeMillis() - beg;
 		System.out.println(time + " ms");
+	}
+
+	@Override
+	void input() {
+	}
+
+	@Override
+	void output() {
+	}
+
+	@Override
+	Integer run() {
+		return null;
 	}
 }

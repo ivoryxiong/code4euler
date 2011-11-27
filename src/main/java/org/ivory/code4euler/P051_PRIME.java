@@ -17,7 +17,7 @@ import org.ivory.code4euler.util.PrimeUtils;
  * 
  * @author ivoryxiong@gmail.com
  */
-public class P051_PRIME extends EasyEuler {
+public class P051_PRIME extends EasyEuler<Integer> {
     private Set<Integer> primes;
 
     private int n;
@@ -31,7 +31,7 @@ public class P051_PRIME extends EasyEuler {
         primes = new HashSet<Integer>(PrimeUtils.GeneratePrime(n));
     }
 
-    public int run() {
+    public Integer run() {
         List<Integer> pp = new ArrayList<Integer>(primes);
         Collections.sort(pp);
         for (int p: pp) {
@@ -135,4 +135,12 @@ public class P051_PRIME extends EasyEuler {
         long time = System.currentTimeMillis() - beg;
         System.out.println(time + " ms");
     }
+
+	@Override
+	void input() {
+	}
+
+	@Override
+	void output() {
+	}
 }
