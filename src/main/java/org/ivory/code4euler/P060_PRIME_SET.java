@@ -71,7 +71,7 @@ public class P060_PRIME_SET extends EasyEuler<Integer> {
 				if( level + ncoms.size() >= len -1) {
 					pre.add(c);
 					dfs(level+1,pre,ncoms);
-					int y = pre.remove(pre.size()-1);
+					pre.remove(pre.size()-1);
 				}
 			}
 		}
